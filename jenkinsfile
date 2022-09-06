@@ -8,7 +8,7 @@ pipeline{
                 checkout([$class: 'GitSCM', branches: [[name: '*/SP2']], extensions: [], userRemoteConfigs: [[credentialsId: 'newPAT1', url: 'https://github.com/Abhijay-repo/https-github.com-kalyan11021980-angular-ssr-starter.git']]])
             }
         }
-         stage('Install node modules'){
+         stage ('Install node modules'){
          steps{
                 sh "npm install"
                 sh "npm run build:ssr"

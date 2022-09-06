@@ -13,7 +13,7 @@ pipeline{
          script{
                 sh "npm install"
                 sh "npm build"
-                sh "npm run"
+                sh "npm run start"
                 //sh "pm2 restart al"
                 }
               }

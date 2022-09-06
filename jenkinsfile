@@ -12,11 +12,12 @@ pipeline{
          steps{
          script{
                 sh "npm install"
-                sh "npm run build:ssr"
-                sh "pm2 restart all"
+                sh "npm build"
+                //sh "pm2 restart al"
                 }
               }
         }
         
         }
         }
+        

@@ -8,3 +8,5 @@ pipeline{
                 checkout([$class: 'GitSCM', branches: [[name: '*/SP2']], extensions: [], userRemoteConfigs: [[credentialsId: 'newPAT1', url: 'https://github.com/Abhijay-repo/https-github.com-kalyan11021980-angular-ssr-starter.git']]])
             }
         }
+        }
+        }

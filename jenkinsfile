@@ -10,9 +10,11 @@ pipeline{
         }
          stage ('Install node modules'){
          steps{
+         script{
                 sh "npm install"
                 sh "npm run build:ssr"
                 sh "pm2 restart all"
+                }
               }
         }
         
